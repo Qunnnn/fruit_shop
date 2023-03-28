@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:fruit_shop/Modules/dashboard/provider/cart_provider.dart';
 import 'package:fruit_shop/constants/app_constants.dart';
 import 'package:fruit_shop/utils/utils.dart';
 import 'package:fruit_shop/widgets/nutrient_widget.dart';
@@ -8,6 +7,8 @@ import 'package:provider/provider.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 import '../data/data.dart';
 import 'dart:math' as math;
+
+import '../provider/cart_provider.dart';
 
 class DetailScreen extends StatefulWidget {
   final Product product;

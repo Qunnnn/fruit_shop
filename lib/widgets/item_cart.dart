@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:fruit_shop/Modules/dashboard/provider/cart_provider.dart';
 import 'package:fruit_shop/data/data.dart';
 import 'package:provider/provider.dart';
+import '../provider/cart_provider.dart';
 
 class ItemCart extends StatefulWidget {
   Product product;

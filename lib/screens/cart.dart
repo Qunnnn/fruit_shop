@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../Modules/dashboard/provider/cart_provider.dart';
+import '../provider/cart_provider.dart';
 import '../widgets/item_cart.dart';
 
 class Cart extends StatefulWidget {
