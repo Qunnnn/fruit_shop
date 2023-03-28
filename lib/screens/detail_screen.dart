@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:fruit_shop/Modules/dashboard/provider/cart_provider.dart';
@@ -22,12 +20,12 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> {
   int quantityAmount = 1;
   double sum = 0;
-  void addItem(Product indiviaulProduct) {
-    Provider.of<MyCart>(context, listen: false).addItemToCard(indiviaulProduct);
+  void addItem(Product indivialProduct) {
+    Provider.of<MyCart>(context, listen: false).addItemToCard(indivialProduct);
 
     showDialog(
         context: context,
-        builder: ((context) => AlertDialog(
+        builder: ((context) => const AlertDialog(
               title: Text('Successfully added!'),
               content: Text('Check your cart'),
             )));
@@ -61,11 +59,11 @@ class _DetailScreenState extends State<DetailScreen> {
                         children: [
                           InkWell(
                               onTap: () {
-                                Navigator.pop(context , sum);
+                                Navigator.pop(context, sum);
                               },
                               child: IconWidget(
                                   FontAwesomeIcons.arrowLeft, false)),
-                          Text(
+                          const Text(
                             'Details',
                             style: TextStyle(
                                 color: Colors.black,
@@ -181,14 +179,14 @@ class _DetailScreenState extends State<DetailScreen> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         SizedBox(
                           height: MediaQuery.of(context).size.height * 0.3,
                           child: GridView.builder(
                               itemCount: data[0].products!.length,
-                              physics: NeverScrollableScrollPhysics(),
+                              physics: const NeverScrollableScrollPhysics(),
                               gridDelegate:
                                   const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 2,

@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 30,
             ),
             RichText(
-              text: TextSpan(children: [
+              text: const TextSpan(children: [
                 TextSpan(
                   text: 'Get your fresh items ',
                   style: TextStyle(
@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   height: 50,
                   width: 275,
                   decoration: BoxDecoration(
@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           offset: const Offset(1, 3),
                         ),
                       ]),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                       icon: Icon(
                         FontAwesomeIcons.magnifyingGlass,
@@ -139,9 +139,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 Container(
                   height: 50,
                   width: 50,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: kPrimaryColor, shape: BoxShape.circle),
-                  child: Icon(
+                  child: const Icon(
                     FontAwesomeIcons.filter,
                     color: Colors.white,
                   ),
@@ -152,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 40,
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemCount: data.length,
